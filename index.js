@@ -73,6 +73,9 @@ app.post("/register", register);
 app.post("/login", login);
 app.post("/logout", logout);
 
+// Export server
+module.exports = app;
+
 // Functions
 
 // Router functions
