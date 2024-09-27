@@ -151,8 +151,6 @@ async function projectDetail(req, res) {
   const { user } = req.session;
   const { id } = req.params;
 
-  if (!user) return res.redirect("/");
-
   const query = `
   SELECT public.projects.*, public.users.name 
   FROM public.projects 
